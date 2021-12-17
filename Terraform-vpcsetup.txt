@@ -1,0 +1,11 @@
+(*)Creation of vpc setup using terraform
+========================================
+https://hiveit.co.uk/techshop/terraform-aws-vpc-example/02-create-the-vpc/
+
+resource "aws_vpc" "vpc" {
+  cidr_block = "10.0.0.0/16"
+
+  tags = {
+    Name = "terraform-example-vpc"
+  }
+}
